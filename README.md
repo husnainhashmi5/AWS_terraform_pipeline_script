@@ -5,19 +5,6 @@ This project has two goals:
 1. Create an underline architecture for ECS with Fargate and deploy latest image into AWS
 2. Create CI/CD pipeline to push Docker image from a Java git repository to ECR
 
-## Architecture
-
-![alt text](ECS_Fargate-ECS.drawio.png)
-
-## CICD
-
-![alt text](ECS_Fargate-CICD.drawio.png)
-
-### Java Container Application
-
-This repository is used as example for the deployment
-Git: https://github.com/cevoaustralia/java-ecs-demo
-
 ## Deployment Guide
 
 This terraform project is divided by two modules
@@ -29,7 +16,7 @@ This terraform project is divided by two modules
 
 2. CICD
    - Code Pipelien deployment
-   - Connects with Java Application Git Repository
+   - Connects with Application Git Repository
    - Push Java application docker container image into ECR
    - Deploy image into ECS
 
